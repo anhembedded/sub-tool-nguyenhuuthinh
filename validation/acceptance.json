@@ -1,0 +1,65 @@
+{
+  "schema": 1,
+  "version": "1.1.0",
+  "status": "PASS",
+  "source_digest": "61400f2b302a244ff276721eb863962fc5e9e30d03304d662b54345ab52b1ae5",
+  "completed_utc": "2026-10-26T13:21:38.288492+00:00",
+  "checks": {
+    "unit_tests": {
+      "status": "PASS",
+      "evidence": {
+        "path": "unit-tests.json",
+        "sha256": "a9f1c296dcbde34aff7d0f7709cb85276af38e8eeb17c6a7a2c7a76a2b85f14c"
+      }
+    },
+    "source_adapter_tests": {
+      "status": "PASS",
+      "evidence": {
+        "path": "source-adapter-tests.json",
+        "sha256": "04e41c9727978e4d465d7183f82e089bf9af89dc39d582009e7680f3ba2bd435"
+      }
+    },
+    "clean_setup": {
+      "status": "PASS",
+      "evidence": {
+        "path": "clean-setup.json",
+        "sha256": "6743dacbdd8287a0d152ef054e0a299fcf9160b9a6eea7fed70156953ddd5972"
+      }
+    },
+    "relocation": {
+      "status": "PASS",
+      "evidence": {
+        "path": "relocation.json",
+        "sha256": "3751bc08b683efcf0aa25f513cf94552317fa6054820fe222932dbf7158965a1"
+      }
+    },
+    "engine_smoke": {
+      "status": "PASS",
+      "evidence": {
+        "path": "engine-smoke.json",
+        "sha256": "5f25ab742592278636fb5e9dfab692c72057952f883f557c54f970ccffe7586e"
+      }
+    },
+    "editorial_integration": {
+      "status": "PASS",
+      "evidence": {
+        "path": "editorial-integration.json",
+        "sha256": "e503643c4c40812968d1731edff0cbcdf82d4d941c94cb27470bbec00e9b706e"
+      }
+    },
+    "original_preservation": {
+      "status": "PASS",
+      "evidence": {
+        "path": "original-preservation.json",
+        "sha256": "81ceb612fe202ba27016d468cb50f31e7df0d07ff3d8124b4caa13334aae02e2"
+      }
+    }
+  },
+  "support_profile": "Windows x64 / CPython 3.12 / compatible NVIDIA CUDA 11.8 driver / 1920x1080 HEVC CFR30 SDR / manual CapCut Chinese / Ava + SFX -5dB",
+  "limitations": [
+    "Clean install and relocation tested on this Windows host; a second physical PC was not used.",
+    "New film download/catalog not contacted; source adapter protocol checks use fixtures.",
+    "Synthetic controller integration substitutes catalog/recognition/Edge/MVSEP responses; independent real engine smoke verifies engines separately.",
+    "No film listening, semantic or visual approval is inferred; film deliveries remain DRAFT."
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "name": "hybrid-yellow-native-v1",
+  "video": {
+    "codec": "libx264",
+    "preset": "medium",
+    "crf": 21,
+    "maxrate": "6M",
+    "bufsize": "12M",
+    "pixel_format": "yuv420p",
+    "threads": 6,
+    "filter_threads": 2
+  },
+  "text": {
+    "font_family": "Arial Bold",
+    "font_file": "environment.font",
+    "fill_rgba": [
+      255,
+      221,
+      0,
+      255
+    ],
+    "stroke_rgba": [
+      16,
+      16,
+      16,
+      255
+    ],
+    "stroke_width_at_1080": 3,
+    "font_size_at_1080": 44,
+    "minimum_font_size_at_1080": 28,
+    "max_lines": 2,
+    "line_spacing_at_1080": 6,
+    "padding_x_at_1080": 14,
+    "padding_y_at_1080": 8,
+    "background": "transparent",
+    "alignment": "actual_alpha_ink_block_center_in_verified_blur_box"
+  },
+  "blur": {
+    "radius_at_1080": 12,
+    "power": 2
+  },
+  "branding": {
+    "reference_width": 1920,
+    "reference_height": 1080,
+    "scale_policy": "uniform_min_canvas_ratio_preserve_asset_aspect",
+    "margin_at_1080": 24,
+    "logo_width_at_1080": 162,
+    "wordmark_width_at_1080": 594,
+    "asset_sha256": {
+      "logo": "aa13631f56392b5e0e91780b2c37c137a0a6a8232e856d371f2973189f32a28c",
+      "wordmark": "b9a794633f5b7932857da63642b8d5849274b68f7a159b42bba69bc41c125a94"
+    }
+  },
+  "mix": {
+    "sample_rate": 48000,
+    "background_db": -5,
+    "voice_db": 0,
+    "limiter_limit": 0.89,
+    "limiter_auto_level": false,
+    "limiter_latency_compensation": true,
+    "master_subtype": "PCM_16",
+    "aac_bitrate": "192k"
+  },
+  "fit": {
+    "backend": "edge-tts",
+    "voice": "en-US-AvaMultilingualNeural",
+    "native_rate": "+0%",
+    "tempo_min": 1.25,
+    "tempo_max": 5.0,
+    "algorithm": "continuous_measured_pcm"
+  },
+  "separation": {
+    "audio_scope": "native_video",
+    "maximum_out_of_video_scope_audio_samples": 4096,
+    "maximum_source_tail_silence_samples": 1600,
+    "shifts": 1,
+    "overlap": 0.8,
+    "precision": "FP32",
+    "included_stems": [
+      "sfx"
+    ],
+    "excluded_stems": [
+      "music",
+      "speech"
+    ]
+  },
+  "preview": {
+    "thumbnail_width": 640,
+    "contact_columns": 2
+  },
+  "qa": {
+    "independent_semantics": "NOT_PERFORMED",
+    "independent_listening": "NOT_PERFORMED"
+  }
+}

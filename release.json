@@ -1,0 +1,11 @@
+{
+  "version": "1.1.0",
+  "software_status": "STABLE",
+  "source_digest": "61400f2b302a244ff276721eb863962fc5e9e30d03304d662b54345ab52b1ae5",
+  "built_utc": "2026-10-26T13:21:38.591841+00:00",
+  "profile": "Windows x64 / NVIDIA GPU FP32 / Hongguo 1920x1080 HEVC CFR30 / manual CapCut Chinese / Ava + SFX -5dB",
+  "portable": false,
+  "setup_downloads_runtime": true,
+  "video_acceptance": "Each film remains DRAFT until actual review",
+  "external_published": false
+}

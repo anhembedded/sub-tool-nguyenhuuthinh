@@ -1,0 +1,48 @@
+{
+  "status": "PASS",
+  "source_digest": "61400f2b302a244ff276721eb863962fc5e9e30d03304d662b54345ab52b1ae5",
+  "begin_utc": "2026-10-26T13:15:17.661051+00:00",
+  "original_source_temporarily_unavailable": true,
+  "checks": [
+    {
+      "check": "relocation-doctor",
+      "returncode": 0,
+      "log_sha256": "c36c9661f4d738d16f67d9196011037df1e3dd2865f81a7b4e00093fa4975f2f",
+      "seconds": 58.875
+    },
+    {
+      "check": "relocation-help",
+      "returncode": 0,
+      "log_sha256": "c31d40f541c5f89e506d17e82e18356efc2ad431a91aea1e5c2f3de6c4bb3894",
+      "seconds": 3.375
+    },
+    {
+      "check": "relocation-init",
+      "returncode": 0,
+      "log_sha256": "76e01d24ef02627d113735a20c375da4d7fe2ba3be31ee540b4e727a96f8e7bd",
+      "seconds": 172.17200000000048
+    },
+    {
+      "check": "relocation-status",
+      "returncode": 0,
+      "log_sha256": "4ff16e27ec2d94e344d9a2901ef66ac3d9329d2db9c0cf46ed7089f5cd4c77c0",
+      "seconds": 2.983999999999469
+    },
+    {
+      "check": "relocation-resume",
+      "returncode": 0,
+      "log_sha256": "303a39bbe65c636abaf30876b7d21a08d5189c66ea8ad4af47fa1292771653a8",
+      "seconds": 2.938000000000102
+    },
+    {
+      "check": "relocation-integration",
+      "returncode": 0,
+      "log_sha256": "afbf0882e782bc2179185725dc6a4a99648a25f8edbd5128ae72011db415d78a",
+      "seconds": 22.515000000000327
+    }
+  ],
+  "qualification": "Relocated exact source with spaces; private clean-installed engines; original source path absent throughout checks; offline doctor plus actual synthetic2/3series controller integration",
+  "original_source_restored": true,
+  "seconds": 263.0630000000001,
+  "end_utc": "2026-10-26T13:19:40.721896+00:00"
+}

@@ -1,0 +1,39 @@
+{
+  "schema": 1,
+  "upstream_repository": "https://github.com/jackotom/hongguo-drama",
+  "upstream_commit": "84b6e88e65374942c123a53c7d6ad9e78bcd101b",
+  "upstream_worktree_modified": true,
+  "license": "GPL-3.0-only",
+  "snapshot_date": "2026-10-20",
+  "copied_files": {
+    "native/app-source.js": {
+      "sha256": "4445a4d7bfd7f75845ea9da88950afe84e3a14788e00f9f5fc5fd7c8a5e6c325"
+    },
+    "native/download-quality.js": {
+      "sha256": "d889d01683ba79e7a81499bd7d960931bff9057d9db14a41b5323afbf207dea7"
+    },
+    "native/episode-metadata.js": {
+      "sha256": "91f76b7f0e355cddaaed8ac136aa27c9f1f952867ebbc0c3c2ec9a26aaa65e4f"
+    },
+    "native/sm3.js": {
+      "sha256": "7e0b7b9e465d2f15884bedc43db039143c30bc105a32db92bd00bd92cf0ec4dc"
+    },
+    "native/web-media-guard.js": {
+      "sha256": "d5c185c9d48e683a19c9975ef9430731a60251107a1e58a5e7a9a92902de04a2"
+    }
+  },
+  "changes": [
+    "app-source.js: exact1920x1080 HEVC aliases retained in eligibility filter and unavailable error clarified; signing/Spade routines unchanged",
+    "episode-metadata.js: complete used web metadata functions extracted; unrelated playback/fallback code removed",
+    "download-quality.js: exact HEVC1080 policy replaces minimum-size threshold",
+    "cli.cjs: configurable isolated output, safe resume identity, strict local validation, no network in validate mode",
+    "safety.cjs: random-token/file-identity lock cleanup and frozen-original root/descendant/ancestor output rejection"
+  ],
+  "original_downloader_sha256": "675cd0341e974c43f6b66eefd65484dafd0344249888eed2a72aab991d97111e",
+  "local_runtime_files": {
+    "cli.cjs": "17b9eb269fb5679162067d5d1b16c5a0324fa0a5f46285215a890ea17d5ce744",
+    "media.cjs": "e3cd552fd12eec6add210009f850e68cb1202c7b6370bace8d4939cf7978004f",
+    "safety.cjs": "c01f6777218607e3633f6d73e65bd322708463168baad1fd69a61180246c1c86",
+    "protected-paths.json": "0fae8a7f3ca99c29aca6df929ca7875bf4d2917d1a4d12302936822a65e6e4cb"
+  }
+}

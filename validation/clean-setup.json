@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "source_digest": "61400f2b302a244ff276721eb863962fc5e9e30d03304d662b54345ab52b1ae5",
+  "qualification": "Fresh role venvs installed from release-hashed primary-source archives on this Windows host; original runtimes were not modified.",
+  "receipt_sha256": "ac4a94461df0f3ab51a1cc55fc199663c646d01b3bed0fa203f263576f8a3c17",
+  "doctor_receipt_sha256": "3d2b9b5bf10e4b822df2341aba8f82be0ecb25907cad8cffae414b79d9baa5f8",
+  "doctor_status": "READY_ENGINE_SMOKE_PASS",
+  "requirement_archives": {
+    "controller": 3,
+    "edge": 13,
+    "capcut": 7,
+    "paddle": 72,
+    "separation": 31
+  },
+  "release_code_sha256": {
+    "tools/runtime_setup.py": "905b995497304b806766864efc6756fa465e19613a8ea12756a4407d19af47f3",
+    "tools/doctor.py": "8e106d0e637637f5f449410ccda2f7543790e678d949e0b61690e9dce0f9ca76",
+    "tools/smoke.py": "18ec4c08afe1e4bb43d5cd4e17a3bcc41ad8760acb7c7b1ddb60df04860df153",
+    "workflow.ps1": "2b9aeb579a0989fcacf7c8727e239f6db1519b0996976c1fcb40c9362376a6dc",
+    "setup.ps1": "405e671087755270b95651ba06bb364b7f6ff09638c90d94e74faddbe6a3c499",
+    "config/downloads.lock.json": "7dff837b39749d255584e1936050e5bf2f52d4a6ea2b6cfea14cfa0ccf19d033"
+  },
+  "cross_machine_scope": "Windows x64 CPython3.12 plus compatible NVIDIA driver and CapCut are prerequisites; no claim of testing a second physical PC."
+}

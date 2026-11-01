@@ -1,0 +1,96 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-22",
+  "records": [
+    {
+      "component": "kokoro",
+      "version": "0.9.4",
+      "file": "kokoro-0.9.4-LICENSE.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source": "Installed distribution license/notice, copied byte-for-byte",
+      "distribution_relative_path": "kokoro-0.9.4.dist-info/licenses/LICENSE"
+    },
+    {
+      "component": "misaki",
+      "version": "0.9.4",
+      "file": "misaki-0.9.4-LICENSE.txt",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "source": "Installed distribution license/notice, copied byte-for-byte",
+      "distribution_relative_path": "misaki-0.9.4.dist-info/licenses/LICENSE"
+    },
+    {
+      "component": "torch",
+      "version": "2.5.1+cu118",
+      "file": "torch-2.5.1+cu118-LICENSE.txt",
+      "sha256": "f226b225fdff2e19dee06ffac7fff8b5c92f4e1a5914421526d0d4b2fbcef9b2",
+      "source": "Installed distribution license/notice, copied byte-for-byte",
+      "distribution_relative_path": "torch-2.5.1+cu118.dist-info/LICENSE"
+    },
+    {
+      "component": "torch",
+      "version": "2.5.1+cu118",
+      "file": "torch-2.5.1+cu118-NOTICE.txt",
+      "sha256": "1c3dec6c0342c7ed9e12af59b296c7bb1d394af5cf881db74191cc8299efce5c",
+      "source": "Installed distribution license/notice, copied byte-for-byte",
+      "distribution_relative_path": "torch-2.5.1+cu118.dist-info/NOTICE"
+    },
+    {
+      "component": "spacy",
+      "version": "3.8.16",
+      "file": "spacy-3.8.16-LICENSE.txt",
+      "sha256": "28a7e41d177cf772d4ebebf157558501508e82e9c57b654c87865956b69f7288",
+      "source": "Installed distribution license/notice, copied byte-for-byte",
+      "distribution_relative_path": "spacy-3.8.16.dist-info/licenses/LICENSE"
+    },
+    {
+      "component": "en-core-web-sm",
+      "version": "3.8.0",
+      "file": "en-core-web-sm-3.8.0-LICENSE.txt",
+      "sha256": "3933c176979b68bc6d0bcc902c7d6c130f1d127f476f17ba5cdba8d99cfd0012",
+      "source": "Installed distribution license/notice, copied byte-for-byte",
+      "distribution_relative_path": "en_core_web_sm-3.8.0.dist-info/LICENSE"
+    },
+    {
+      "component": "en-core-web-sm",
+      "version": "3.8.0",
+      "file": "en-core-web-sm-3.8.0-LICENSES_SOURCES.txt",
+      "sha256": "20d9dfacd215112251f15341edd1a47b1f98bf393a212f10f194ffdc7ee98a90",
+      "source": "Installed distribution license/notice, copied byte-for-byte",
+      "distribution_relative_path": "en_core_web_sm-3.8.0.dist-info/LICENSES_SOURCES"
+    },
+    {
+      "component": "phonemizer-fork",
+      "version": "3.3.2",
+      "file": "phonemizer-fork-3.3.2-LICENSE.txt",
+      "sha256": "d62f065830aa3739cc031156b9690805c7b2e811b4a178c8b4acd8725d561c94",
+      "source": "Installed distribution license/notice, copied byte-for-byte",
+      "distribution_relative_path": "phonemizer_fork-3.3.2.dist-info/licenses/LICENSE"
+    },
+    {
+      "component": "Kokoro model/voices",
+      "file": "Kokoro-model-Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "source_url": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+      "scope": "Apache-2.0 text; model license declared by the primary model card"
+    },
+    {
+      "component": "espeakng-loader upstream",
+      "file": "espeakng-loader-upstream-MIT.txt",
+      "sha256": "b05c73bb1335b4320ec97edff106b3991c12d0acdc6e899c96f061a15039119f",
+      "source_url": "https://raw.githubusercontent.com/thewh1teagle/espeakng-loader/main/LICENSE",
+      "scope": "Upstream current repository license; installed 0.2.4 wheel contains no license metadata/file, so exact release license mapping is unverified"
+    },
+    {
+      "component": "eSpeak NG upstream",
+      "file": "espeak-ng-GPL-3.0.txt",
+      "sha256": "8ceb4b9ee5adedde47b31e975c1d90c73ad27b6b165a1dcd80c7c545eb65b903",
+      "source_url": "https://raw.githubusercontent.com/espeak-ng/espeak-ng/master/COPYING",
+      "scope": "GPL text for the separately licensed shared-library component; not the MIT loader wrapper"
+    }
+  ],
+  "scope": "License/notice evidence for external TTS runtime and model acquisition. This source release does not contain model weights, runtime environments, eSpeak binaries or Python wheels.",
+  "primary_model_license": "https://huggingface.co/hexgrad/Kokoro-82M/blob/main/README.md",
+  "unverified": [
+    "The exact source revision/license inventory of the embedded eSpeak NG binary inside espeakng-loader 0.2.4 has not been established; upstream GPL text is included without claiming full binary-license closure."
+  ]
+}

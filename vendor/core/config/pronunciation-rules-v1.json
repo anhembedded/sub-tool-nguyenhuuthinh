@@ -1,0 +1,25 @@
+{
+  "schema_version": 1,
+  "version": "pronunciation-rules-v1",
+  "policy": "Context evidence is mandatory. Pattern matches route review and never confirm meaning, emotion, pronunciation or listening approval.",
+  "span_unit": "Unicode code point",
+  "default_action": "NEEDS_REVIEW when context is ambiguous; preserve canonical spelling and use only checked engine phoneme overrides",
+  "automatic_contextual_substitutions": false,
+  "categories": {
+    "shushing": {"examples": ["Shh", "Shhh", "Shush"], "required_distinction": "silence signal versus an initialism", "limit": "No default shushing phoneme; chosen engine-inventory phonemes and resulting audio require listening review. Repeating a phoneme does not prove a natural shush."},
+    "interjections": {"examples": ["Hmm", "Huh?", "Ah!", "Oh", "Uh", "Um", "Ha", "Haha", "Tsk"], "required_distinction": "thought, doubt, agreement, surprise, pain, hesitation, mockery or a lexical utterance", "limit": "No automatic laughter, breaths or screams; Kokoro is not guaranteed to generate natural non-speech reactions."},
+    "abbreviations": {"examples": ["US", "us", "A", "I", "No.", "Dr.", "St."], "required_distinction": "word, letter, initialism, title, code or domain-specific abbreviation", "limit": "No global uppercase spelling or unconfirmed expansion."},
+    "numbers": {"examples": ["401", "110", "1.25", "$180", "3–5", "00401", "2026", "12:30", "25%", "-5", "5 kg"], "required_distinction": "quantity, ordinal, room, ID, telephone, date, time, decimal, fraction, percent, currency, range, negative or unit", "limit": "Keep value, leading zeroes, units and currency. Configuration values outside canonical_text are never spoken."},
+    "names": {"required_distinction": "confirmed character, address, relationship, place or specialist term using versioned glossary", "limit": "Spelling is unchanged; an override is not confirmed without source evidence and listening review."},
+    "homographs": {"examples": ["read", "lead", "live", "bow", "wind", "tear"], "required_distinction": "part of speech, tense and intended sense", "limit": "Never apply a single phoneme to all occurrences."},
+    "punctuation": {"required_distinction": "statement, question, negation, command, quote, interruption, hesitation, hyphen, dialogue dash or minus", "limit": "Preserve internal pauses, negation and conjunctions; do not infer emotion from punctuation or casing alone."},
+    "delivery": {"examples": ["shushing", "hesitant", "surprised", "sarcastic", "quiet", "angry"], "required_distinction": "evidence-supported delivery versus unresolved interpretation", "limit": "Kokoro adapter has no prompt-based acting, emotion, whisper, pitch or SSML control. Labels are stored as unsupported and never spoken."}
+  },
+  "reviews": {"technical": "automatic checks only", "pronunciation": "PENDING until an actual independent review receipt is recorded", "listening": "PENDING for native and fitted audio separately", "semantic": "PENDING until an actual independent review receipt is recorded"},
+  "engine_sources": [
+    "https://github.com/hexgrad/kokoro/blob/main/kokoro/pipeline.py",
+    "https://github.com/hexgrad/kokoro/blob/main/kokoro/model.py",
+    "https://github.com/hexgrad/misaki/blob/main/misaki/en.py",
+    "https://huggingface.co/hexgrad/Kokoro-82M/blob/main/README.md"
+  ]
+}

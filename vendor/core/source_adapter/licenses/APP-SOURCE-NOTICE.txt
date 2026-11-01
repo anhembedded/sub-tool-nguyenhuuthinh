@@ -1,0 +1,17 @@
+App playback source and signature attribution
+
+The necessary signature, Spade URL and content-key routines in app-source.js
+are adapted from N3urda/hongguoTV server/vendor/hongguo.cjs, commit
+ eea73e6a45569a2cbbb9440f7cd5290c459b0b70.
+https://github.com/N3urda/hongguoTV
+
+That file is an unmodified copy (renamed) of spider/js/红果果[短].js from
+woshishiq1/drpys, commit 22261adfa31435e3b3ef5a730b8a2a75bcaf1715.
+https://github.com/woshishiq1/drpys
+Upstream license: GPL-3.0; complete text: LICENSE.drpys.txt.
+
+Modifications made 2026-10-07: limited playback adapter, local ephemeral
+visitor identifiers, removal of fixed visitor fingerprints, strict response
+and destination validation, supported-codec selection and no secret logging.
+SM3 is implemented locally for Electron runtimes without native SM3 support.
+The existing application remains GPL-3.0.

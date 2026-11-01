@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "source_digest": "61400f2b302a244ff276721eb863962fc5e9e30d03304d662b54345ab52b1ae5",
+  "returncode": 0,
+  "tests": 6,
+  "seconds": 0.375,
+  "raw_log_sha256": "e7bd4884d4c102bd37072876f1c6f4b9570737f26eedd62f3c665c78ad7943fb"
+}

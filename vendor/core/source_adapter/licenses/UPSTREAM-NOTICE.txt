@@ -1,0 +1,104 @@
+NOTICE —— 来源与修改说明
+=========================
+
+本软件（红果短剧下载器 / hongguo-downloader）是基于他人开源项目的**修改版本**。
+依照 GNU General Public License v3.0 第 5(a) 条，特此声明如下。
+
+一、上游项目
+------------
+名称   : hongguo-downloader（红果短剧全集批量下载器）
+仓库   : https://github.com/327044572/hongguo-downloader
+许可   : GNU General Public License v3.0
+
+二、修改声明
+------------
+本版本**对上游源码进行了修改**，修改时间自 2026 年 9 月起。
+
+相对于上游版本，主要的修改内容如下：
+
+  1. 新增「浏览」页：按分类与题材浏览剧集列表，支持分页
+  2. 新增剧集搜索（内嵌浏览器嗅探）
+  3. 新增内置播放器：边下边看、自动连播、断点续播、剧集管理面板
+  4. 新增在线播放（内存缓存，不写入磁盘）
+  5. 新增兼容模式：HEVC 无法解码时自动转码为 H.264
+  6. 新增「一键合并」全集（内置 ffmpeg）
+  7. 新增文件清理功能：按剧删除、看完自动删、占用统计
+  8. 新增网络代理配置
+  9. 修复下载并发数不生效（调度器阻塞导致并发恒为 1）
+  10. 修复任务记录缺失时磁盘上已有文件被误判为「未下载」
+  11. 移除上游版本中的推广内容与品牌标识
+  12. 移除启动时自动打开官网的行为
+  13. 重写 README 与打包脚本
+
+早期修改记录见上述上游仓库；Mac 分支以清理后的源码快照开始维护。
+
+三、许可证
+----------
+本修改版本**整体继续以 GNU General Public License v3.0 授权**，
+许可证全文见本目录下的 `LICENSE` 文件。
+
+本版本不附加任何额外限制。
+
+四、对应源码
+------------
+GPLv3 第 6 条要求分发二进制时提供对应的完整源码。
+本软件为开源项目，完整源码见本仓库；如你是从别处获得本软件的二进制版本，
+可向分发者索取源码，或从本仓库获取。
+
+五、第三方组件
+--------------
+本软件包含以下第三方组件，其版权归各自作者所有：
+
+  - Electron            MIT License
+  - React / ReactDOM    MIT License
+  - axios               MIT License
+  - FFmpeg              GPLv3（内置，用于合并与转码）
+
+各组件许可证详情见 `THIRD-PARTY-NOTICES.md`。
+随软件分发的 FFmpeg 许可证全文位于 `resources/bin/` 目录下。
+
+六、Apple Silicon Mac 移植（2026-10-07）
+----------------------------------------
+本版本在 zhenyong97/hongguo-downloader 的修改版本上继续移植：
+  https://github.com/zhenyong97/hongguo-downloader
+Mac 分支源码仓库：
+  https://github.com/jackotom/hongguo-drama-mac
+
+版本 1.1.1 增加原生 arm64 应用和 DMG 构建、Mac FFmpeg/FFprobe 定位、
+VideoToolbox 编码器、Mac 菜单与 Dock 窗口生命周期支持。
+Electron 更新至 44.6.0，electron-builder 更新至 26.15.3。
+保留 Windows 构建、原上游版权、修改声明与 GPL-3.0 授权。
+
+Mac 内置 FFmpeg 为 GPLv3-or-later 的独立 arm64 构建，详见
+build/ffmpeg/MACOS-NOTICE.txt、MACOS-VERSIONS.txt、MACOS-LICENSE.txt。
+本地默认构建使用 ad-hoc 签名；正式发行的签名和 Apple 公证状态以相应 Release 为准。
+二进制发行同时提供应用源码与 FFmpeg/x264 完整对应源码和构建材料。
+
+七、App 片源补充（1.1.2，2026-10-07）
+-----------------------------------
+新增本地签名及 fallback_api 二次取址，适配网页未提供媒体的分集。
+必要算法改编自 N3urda/hongguoTV 所收录的 woshishiq1/drpys GPL-3.0 源码；
+具体提交、修改与许可全文见 src/native/licenses/。使用本地临时访客参数，
+不包含上游固定设备 ID、账号 Cookie 或第三方签名服务。
+新片源通过内置 FFmpeg 解密，选择受支持编码，保留原网页及旧接口路径。
+
+八、1.1.3 稳定性及独立来源（2026-10-07）
+---------------------------------------
+分类目录改为独立限时请求，避免漫画页阻塞后续分类；图文漫画明确标注不支持视频。
+混合编码分集合并前逐集标准化；硬件编码失败可整轮回退软件编码。
+新增西饭独立来源，保留服务端锁定状态，不请求解锁或广告奖励接口。
+来源接口参考 Hululu007/drpy-node 的接口路径与公开返回结构，适配器独立编写。
+Mac FFmpeg 改为固定 FFmpeg 9.0.2 与 x264 b35605a 自行源码构建。
+
+2026-10-07 (1.1.5): Added all-source search across Hongguo, Xifan and Hema.
+The independently implemented Hema adapter reads publicly available search and
+episode metadata from www.kuaikaw.cn, preserves charged/unknown episodes as locked,
+and does not request unlock or encrypted-media endpoints. No third-party adapter
+code was copied. Content rights remain with their respective owners.
+
+九、1.1.9 三平台同步发行（2026-10-11）
+----------------------------------------
+新增 Windows x64 固定源码媒体构建、单文件便携 EXE 与隔离运行验收工作流。
+Mac arm64、Mac x64、Windows x64 共用版本号；平台验证与签名状态分别记录。
+
+1.2 changes: per-series fit-window / keep-width picture modes; optional GitHub release notices without forced download or installation.

@@ -1,0 +1,17 @@
+{
+  "name": "hongguo-ssot-source-adapter",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Isolated exact 1920x1080 HEVC Hongguo App source adapter",
+  "license": "GPL-3.0-only",
+  "engines": {
+    "node": ">=22.12"
+  },
+  "scripts": {
+    "test": "node --test test/*.test.cjs",
+    "download": "node cli.cjs"
+  },
+  "dependencies": {
+    "axios": "1.20.0"
+  }
+}

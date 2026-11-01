@@ -1,0 +1,9 @@
+{
+  "seriesId": "7696095984266251326",
+  "episodes": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+  "outputRoot": "./runtime/new-film-source",
+  "concurrency": 2,
+  "maxBytesPerEpisode": 367001600,
+  "ffmpeg": "ffmpeg",
+  "ffprobe": "ffprobe"
+}

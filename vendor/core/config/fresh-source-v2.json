@@ -1,0 +1,127 @@
+{
+  "schema_version": 2,
+  "profile": "fresh-source-v2",
+  "profile_version": "2.0.0",
+  "source": {
+    "codec": "hevc",
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1"
+  },
+  "ocr": {
+    "engine": "PaddleOCR",
+    "device": "gpu:0",
+    "precision": "fp32",
+    "detector": "PP-OCRv5_mobile_det",
+    "recognizer": "PP-OCRv5_mobile_rec",
+    "native_frames": true,
+    "sampling_stride": 1,
+    "require_film_roi_evidence": true
+  },
+  "tts": {
+    "provider": "kokoro",
+    "model": "hexgrad/Kokoro-82M",
+    "voice": "af_heart",
+    "language": "a",
+    "device": "cpu",
+    "precision": "float32",
+    "speed": 1.0,
+    "sample_rate": 48000,
+    "channels": 1,
+    "pcm_subtype": "PCM_16"
+  },
+  "timing": {
+    "first_tempo": 1.25,
+    "step": 0.25,
+    "max_tempo": 3.75,
+    "following_gap": true,
+    "allow_overlap": false,
+    "move_start": false,
+    "remove_internal_pauses": false
+  },
+  "separation": {
+    "enabled": true,
+    "model": "MVSEP-CDX23",
+    "checkpoint": "97d170e1-dbb4db15.th",
+    "device": "cuda:0",
+    "precision": "fp32",
+    "shifts": 1,
+    "overlap": 0.8,
+    "include_speech": false
+  },
+  "audio": {
+    "background_db": -15,
+    "tts_db": 0,
+    "limiter": 0.89,
+    "compensate_limiter_latency": true,
+    "sample_rate": 48000,
+    "channels": 2,
+    "ducking": false,
+    "eq": false,
+    "pitch_change": false
+  },
+  "encoder": {
+    "name": "libx264",
+    "preset": "medium",
+    "crf": 21,
+    "maxrate": "6M",
+    "bufsize": "12M",
+    "pixel_format": "yuv420p"
+  },
+  "media": {
+    "width": 1920,
+    "height": 1080,
+    "fps": "30/1",
+    "film_id": null,
+    "blur": {
+      "verified": false
+    },
+    "subtitles": {
+      "font_path": "C:/Windows/Fonts/arialbd.ttf",
+      "cn_reference_glyph_height": null,
+      "x": 40,
+      "y": 850,
+      "width": 1840,
+      "height": 200,
+      "safe_margin": 24,
+      "max_lines": 3
+    },
+    "branding": {
+      "safe_margin": 24,
+      "critical_regions": [],
+      "logo": {
+        "path": "assets/logo.png",
+        "sha256": "aa13631f56392b5e0e91780b2c37c137a0a6a8232e856d371f2973189f32a28c",
+        "x": 24,
+        "y": 24,
+        "width": 108,
+        "height": 108
+      },
+      "wordmark": {
+        "path": "assets/word.png",
+        "sha256": "b9a794633f5b7932857da63642b8d5849274b68f7a159b42bba69bc41c125a94",
+        "x": 1480,
+        "y": 24,
+        "width": 400,
+        "height": 90
+      }
+    }
+  },
+  "review": {
+    "default_status": "DRAFT",
+    "soft_gates": [
+      "pronunciation_review",
+      "listening_review",
+      "semantic_review",
+      "separation_review"
+    ],
+    "hard_gates_overridable": false
+  },
+  "orchestration": {
+    "max_attempts": 3,
+    "command_timeout_seconds": 900,
+    "stall_seconds": 120,
+    "translation_provider": "Codex session or explicit external reviewed artifact",
+    "chat_tools_in_background": false
+  }
+}

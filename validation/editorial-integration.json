@@ -1,0 +1,167 @@
+{
+  "status": "PASS",
+  "source_digest": "61400f2b302a244ff276721eb863962fc5e9e30d03304d662b54345ab52b1ae5",
+  "raw_report_sha256": "a9815a023c429e77e26db5f841a74777b453791c6f5cfb373a67e78d845465dc",
+  "qualification": "Synthetic controller integration; generated tones and known-layout fixtures; not film, listening or semantic approval.",
+  "engine_acceptance": "NOT_PROVEN_BY_THIS_CHECK",
+  "fixtures": [
+    "catalog",
+    "saved CapCut recognition",
+    "Edge response tone",
+    "MVSEP float SFX"
+  ],
+  "real_film_approval": false,
+  "series": [
+    {
+      "series_id": "9100000000000002",
+      "actual": {
+        "episodes": [
+          1,
+          2
+        ],
+        "frames": 60,
+        "pcm_samples": 96000,
+        "cue_count": 2,
+        "seams": 1
+      },
+      "name_review_status": "NOT_REQUIRED",
+      "video_sha256": "3daae3f36ad00275fc8665de3ed124b6e5fee03ffbf06b05f1a314523e141ff9",
+      "srt_sha256": "7974a4afdec879acc9ca333fbce7a3bd54470e6effea864b25b39ba81e435b48",
+      "sealed_payloads_verified": true,
+      "stages": [
+        {
+          "action": "editorial-export",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "editorial-import",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "geometry-prepare",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "geometry-import",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "ocr",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "names-import",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "speech",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "background",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "video",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "review-prepare",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "pts",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "finish",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "package",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "seal",
+          "status": "COMPLETE"
+        }
+      ]
+    },
+    {
+      "series_id": "9100000000000003",
+      "actual": {
+        "episodes": [
+          1,
+          2,
+          3
+        ],
+        "frames": 90,
+        "pcm_samples": 144000,
+        "cue_count": 3,
+        "seams": 2
+      },
+      "name_review_status": "NOT_REQUIRED",
+      "video_sha256": "f91f62c55b5cfcefc521bba3cabbcfe741a8f8dfad3ee58a8fa7707e56c39f0c",
+      "srt_sha256": "4a5877a5e4552bcd43282e9a483f8848b6c410c9ade8635742b7adfcccc109fd",
+      "sealed_payloads_verified": true,
+      "stages": [
+        {
+          "action": "editorial-export",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "editorial-import",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "geometry-prepare",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "geometry-import",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "ocr",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "names-import",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "speech",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "background",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "video",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "review-prepare",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "pts",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "finish",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "package",
+          "status": "COMPLETE"
+        },
+        {
+          "action": "seal",
+          "status": "COMPLETE"
+        }
+      ]
+    }
+  ]
+}

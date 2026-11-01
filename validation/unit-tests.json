@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "source_digest": "61400f2b302a244ff276721eb863962fc5e9e30d03304d662b54345ab52b1ae5",
+  "tests": 78,
+  "errors": 0,
+  "failures": 0,
+  "skipped": 0,
+  "seconds": 11.57800000000043,
+  "raw_log_sha256": "45108e947a583650bc9ba92ed8945826536c309fc2214006decf6efce06cab8d",
+  "errors_summary": []
+}

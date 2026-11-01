@@ -1,0 +1,22 @@
+{
+  "status": "PASS",
+  "workflow_files": 305,
+  "workflow_changed": [],
+  "deliveries": [
+    {
+      "delivery": "previous",
+      "files": 30,
+      "status": "PASS",
+      "changed": []
+    },
+    {
+      "delivery": "latest",
+      "files": 32,
+      "status": "PASS",
+      "changed": []
+    }
+  ],
+  "source_digest": "61400f2b302a244ff276721eb863962fc5e9e30d03304d662b54345ab52b1ae5",
+  "checked_utc": "2026-10-26T13:12:11.854496+00:00",
+  "qualification": "Original project workflow lock and both sealed delivery checksum lists verified without modifying them"
+}

@@ -1,0 +1,62 @@
+{
+  "status": "PASS",
+  "source_digest": "61400f2b302a244ff276721eb863962fc5e9e30d03304d662b54345ab52b1ae5",
+  "receipt_sha256": "bb7175b9f4270c15af01315cba6175e1b5d98fa1c9c3a8da0e411da7ad740b6c",
+  "online": true,
+  "seconds": 63.1869999999999,
+  "checks": {
+    "media": {
+      "status": "PASS",
+      "series": [
+        {
+          "episodes": 2,
+          "frames": 60,
+          "pcm_samples": 96000,
+          "cues": 2,
+          "seams": 1,
+          "video_sha256": "78ac91f9cbd9965680978aa5bc156e873c9c7156e45a45ab5ea30a85f1cf43c3"
+        },
+        {
+          "episodes": 3,
+          "frames": 90,
+          "pcm_samples": 144000,
+          "cues": 3,
+          "seams": 2,
+          "video_sha256": "39790da2865fb82db0b66a0ef55ea9505fe499b0e5d352d485e3cb4bde7f32be"
+        }
+      ]
+    },
+    "capcut": {
+      "status": "PASS",
+      "draft_sha256": "0b68a6f6eb2d51ed6880cecbef304a9297b0e8d9dca597c4cec832c40ec2acf5",
+      "native_frames": 30,
+      "recognition": "NOT_RUN_MANUAL_CAPCUT_STEP_REQUIRED"
+    },
+    "paddle": {
+      "status": "PASS",
+      "receipt_sha256": "3864ba40c0d1f14023443ca496d304074c7902c162302736978b88e034b50632",
+      "kernel_records": 579
+    },
+    "mvsep": {
+      "status": "PASS",
+      "receipt_sha256": "01f73a64b5b6ebddba462eeb55020bb6e805d05a7d87573fe83895b191557e52",
+      "included_stems": [
+        "sfx"
+      ],
+      "kernel_records": 667,
+      "input_samples": 48000,
+      "output_samples": 48000
+    },
+    "ava": {
+      "status": "PASS",
+      "voice": "en-US-AvaMultilingualNeural",
+      "rate": "+0%",
+      "samples": 153216,
+      "mp3_sha256": "f2b897730a210b8d55e29d8a4946a09b60b8c23be7c847f56cd615b443e6a2de",
+      "pcm_sha256": "e1ebf1ee12d023ce65d4ff0c50d7dfa1b38c06dce441669dcf56638bf06f71a3",
+      "isolated_edge_fit": "PASS",
+      "fit_tempo": 1.25
+    }
+  },
+  "qualification": "Real configured engines and synthetic content only; CapCut recognition remains a manual application step; no film listening/semantic approval"
+}

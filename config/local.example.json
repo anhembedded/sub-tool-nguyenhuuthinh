@@ -1,0 +1,33 @@
+{
+  "schema": 2,
+  "profile": "ava-sfx-native-1080p30",
+  "variables": {"RUNTIME": "C:/WorkflowRuntime/1.1.0"},
+  "env": {
+    "controller_python": "${RUNTIME}/envs/controller/Scripts/python.exe",
+    "edge_python": "${RUNTIME}/envs/edge/Scripts/python.exe",
+    "paddle_python": "${RUNTIME}/envs/paddle/Scripts/python.exe",
+    "separation_python": "${RUNTIME}/envs/separation/Scripts/python.exe",
+    "capcut_python": "${RUNTIME}/envs/capcut/Scripts/python.exe",
+    "node": "${RUNTIME}/tools/node/node-v24.22.1-win-x64/node.exe",
+    "ffmpeg": "${RUNTIME}/tools/ffmpeg/ffmpeg-9.0.2-essentials_build/bin/ffmpeg.exe",
+    "ffprobe": "${RUNTIME}/tools/ffmpeg/ffmpeg-9.0.2-essentials_build/bin/ffprobe.exe",
+    "source_adapter": "${PROJECT}/vendor/core/source_adapter",
+    "font": "C:/Windows/Fonts/arialbd.ttf",
+    "preview_font": "C:/Windows/Fonts/arial.ttf",
+    "logo": "${PROJECT}/assets/logo.png",
+    "wordmark": "${PROJECT}/assets/word.png",
+    "ocr_det_model": "${RUNTIME}/models/PP-OCRv5_mobile_det",
+    "ocr_rec_model": "${RUNTIME}/models/PP-OCRv5_mobile_rec",
+    "ocr_dll_directories": [],
+    "separation_checkpoint": "${RUNTIME}/models/separation/97d170e1-dbb4db15.th",
+    "separation_engine_lock": "${RUNTIME}/locks/separation-engine.json",
+    "cupti_library": "GENERATED_BY_SETUP",
+    "separation_dll_directories": [],
+    "gpu_lock": "C:/WorkflowRuntime/shared/gpu-0.lock",
+    "capcut_project_root": "C:/Users/YOUR_USER/AppData/Local/CapCut/User Data/Projects/com.lveditor.draft",
+    "runtime_manifest": "${RUNTIME}/runtime-manifest.json"
+  },
+  "preset": "${PROJECT}/config/preset.json",
+  "retries": 0,
+  "note": "Documentation template only. setup.ps1 discovers exact extracted binary/DLL locations and writes a usable local config; do not use this file directly."
+}

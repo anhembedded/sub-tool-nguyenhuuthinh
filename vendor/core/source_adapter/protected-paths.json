@@ -1,0 +1,11 @@
+{
+  "schema": 2,
+  "basis": "Paths relative to source adapter; downloads must not enclose or overwrite distributed code, configuration or assets",
+  "paths": [
+    "../../../assets",
+    "../../../config",
+    "../../../hongguo_lite",
+    "../../../tools",
+    "../../"
+  ]
+}

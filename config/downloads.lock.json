@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "platform": "Windows x64 CPython 3.12",
+  "artifacts": {
+    "vclibs": {
+      "url": "https://download.microsoft.com/download/4/7/c/47c6134b-d61f-4024-83bd-b9c9ea951c25/Microsoft.VCLibs.x64.14.00.Desktop.appx",
+      "filename": "Microsoft.VCLibs.x64.14.00.Desktop.appx",
+      "sha256": "b56a9101f706f9d95f815f5b7fa6efbac972e86573d378b96a07cff5540c5961"
+    },
+    "cudnn": {
+      "url": "https://developer.download.nvidia.com/compute/cudnn/redist/cudnn/windows-x86_64/cudnn-windows-x86_64-8.9.7.29_cuda11-archive.zip",
+      "filename": "cudnn-windows-x86_64-8.9.7.29_cuda11-archive.zip",
+      "sha256": "5e45478efe71a96329e6c0d2a3a2f79c747c15b2a51fead4b84c89b02cbf1671"
+    },
+    "node": {
+      "url": "https://nodejs.org/dist/v24.22.1/node-v24.22.1-win-x64.zip",
+      "filename": "node-v24.22.1-win-x64.zip",
+      "sha256": "d2046d28c2c3dcd211ac5145c0bf30e2047ef9dfb306693c8c6e2eccd8b95fa5"
+    },
+    "ffmpeg": {
+      "url": "https://www.gyan.dev/ffmpeg/builds/packages/ffmpeg-9.0.2-essentials_build.zip",
+      "filename": "ffmpeg-9.0.2-essentials_build.zip",
+      "sha256": "60f467265b1e312373dbcd92200c2618a74850f98d3d078e94296bb3fa2047ba"
+    }
+  },
+  "models": [
+    {
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_det/resolve/0d63e78e2b680928f6b1747d76a08db6e645efb7/config.json",
+      "sha256": "7ac1c33f377ba58561f4b89d3180b6add2b7c5c60a4edac90fa4e0ceccdc6665",
+      "filename": "PP-OCRv5_mobile_det-config.json",
+      "target": "models/PP-OCRv5_mobile_det/config.json",
+      "revision": "0d63e78e2b680928f6b1747d76a08db6e645efb7"
+    },
+    {
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_det/resolve/0d63e78e2b680928f6b1747d76a08db6e645efb7/inference.json",
+      "sha256": "05feef1acb00aa4cd7362b15f7f501fc4f99d7b1fa73c1c871e0c7b1504b0f5c",
+      "filename": "PP-OCRv5_mobile_det-inference.json",
+      "target": "models/PP-OCRv5_mobile_det/inference.json",
+      "revision": "0d63e78e2b680928f6b1747d76a08db6e645efb7"
+    },
+    {
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_det/resolve/0d63e78e2b680928f6b1747d76a08db6e645efb7/inference.pdiparams",
+      "sha256": "afa1820cb16c1fd0dad589d0f8b389139061c1ef6d68019685fd07be997dda5b",
+      "filename": "PP-OCRv5_mobile_det-inference.pdiparams",
+      "target": "models/PP-OCRv5_mobile_det/inference.pdiparams",
+      "revision": "0d63e78e2b680928f6b1747d76a08db6e645efb7"
+    },
+    {
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_det/resolve/0d63e78e2b680928f6b1747d76a08db6e645efb7/inference.yml",
+      "sha256": "98069072e1b6b37d727fd9d9f11725faa46d6ea0de012f2ed26caea011c37699",
+      "filename": "PP-OCRv5_mobile_det-inference.yml",
+      "target": "models/PP-OCRv5_mobile_det/inference.yml",
+      "revision": "0d63e78e2b680928f6b1747d76a08db6e645efb7"
+    },
+    {
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_det/resolve/0d63e78e2b680928f6b1747d76a08db6e645efb7/README.md",
+      "sha256": "4cc20ad6d41af86b3ce9885ffb0956e152574a2eb14179aeb07fd2d3956161ca",
+      "filename": "PP-OCRv5_mobile_det-README.md",
+      "target": "models/PP-OCRv5_mobile_det/README.md",
+      "revision": "0d63e78e2b680928f6b1747d76a08db6e645efb7"
+    },
+    {
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_rec/resolve/682f20538d8c086cb2128e5cfac775e6c4904e85/config.json",
+      "sha256": "6df1587ae056f0b987125fc894b17f62ae3a12644fa2488d108f19377da9c1a8",
+      "filename": "PP-OCRv5_mobile_rec-config.json",
+      "target": "models/PP-OCRv5_mobile_rec/config.json",
+      "revision": "682f20538d8c086cb2128e5cfac775e6c4904e85"
+    },
+    {
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_rec/resolve/682f20538d8c086cb2128e5cfac775e6c4904e85/inference.json",
+      "sha256": "24587345250c7332d0fc6f9a44e794d078cdaeb64c302fef906f325619de2569",
+      "filename": "PP-OCRv5_mobile_rec-inference.json",
+      "target": "models/PP-OCRv5_mobile_rec/inference.json",
+      "revision": "682f20538d8c086cb2128e5cfac775e6c4904e85"
+    },
+    {
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_rec/resolve/682f20538d8c086cb2128e5cfac775e6c4904e85/inference.pdiparams",
+      "sha256": "2460da90875937c94db97eba74ae3d9e5d4c4c57c42f1f41531c09a26bcc771a",
+      "filename": "PP-OCRv5_mobile_rec-inference.pdiparams",
+      "target": "models/PP-OCRv5_mobile_rec/inference.pdiparams",
+      "revision": "682f20538d8c086cb2128e5cfac775e6c4904e85"
+    },
+    {
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_rec/resolve/682f20538d8c086cb2128e5cfac775e6c4904e85/inference.yml",
+      "sha256": "5dfeb2777f6d0db8177d8128a8acfcf6e6276dc4ac73ea3bf0dc06d6a5e85d8e",
+      "filename": "PP-OCRv5_mobile_rec-inference.yml",
+      "target": "models/PP-OCRv5_mobile_rec/inference.yml",
+      "revision": "682f20538d8c086cb2128e5cfac775e6c4904e85"
+    },
+    {
+      "url": "https://huggingface.co/PaddlePaddle/PP-OCRv5_mobile_rec/resolve/682f20538d8c086cb2128e5cfac775e6c4904e85/README.md",
+      "sha256": "b02727443cef4904a9ee12accdfaf66fcbada7b93a1a05c40dde7582291ba28c",
+      "filename": "PP-OCRv5_mobile_rec-README.md",
+      "target": "models/PP-OCRv5_mobile_rec/README.md",
+      "revision": "682f20538d8c086cb2128e5cfac775e6c4904e85"
+    },
+    {
+      "url": "https://github.com/ZFTurbo/MVSEP-CDX23-Cinematic-Sound-Demixing/releases/download/v.1.0.0/97d170e1-dbb4db15.th",
+      "sha256": "dbb4db154df7e45a5cb72d1659c48937e757f6d6b0eef8ca4199e6e38f8d8f37",
+      "filename": "97d170e1-dbb4db15.th",
+      "target": "models/separation/97d170e1-dbb4db15.th"
+    }
+  ]
+}
